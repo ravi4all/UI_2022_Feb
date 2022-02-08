@@ -1,0 +1,31 @@
+2 major type of tags in HTML
+- Block Level
+  - h1...h6, p, div, table, list, form...
+  - occupy the full area available to them
+  - width is equals to the screen area, height depends on content
+
+- Inline Level
+  - a, b, u, ins, span, del...
+  - occupy the area only according to content
+  - width and height is always auto x auto
+
+- Inline-Block
+  - img
+
+- we don't use block elements as child of inline elements
+- except <a> tag
+
+
+b -> strong
+u -> ins = insert
+i -> em  = emphasize
+
+
+Entity
+
+
+
+
+
+
+
