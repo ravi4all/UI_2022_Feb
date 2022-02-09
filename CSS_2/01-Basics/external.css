@@ -1,0 +1,7 @@
+/* h2 - selector
+{} - expression
+color - property
+blue - value */
+h2 {
+    color: blue;
+}

@@ -1,0 +1,38 @@
+CSS 2
+
+- Basic Introduction
+  - Ways to implement CSS
+  - Selectors - ID and Class
+  - Preferences
+- Box Model
+  - Borders
+  - Margin
+  - Padding
+- Background Images / Colors
+- Text Formatting
+  - Font Styling
+  - Text Formatting
+- Content Alignment
+  - Float - Column Layout
+  - Positions
+  - Display
+
+
+1. Common Color
+2. Common Font
+3. Common Spacing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
