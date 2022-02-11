@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h2 {
+            color: red;
+        } */
+        /* #parent .child h2 {
+            color: red;
+        } */
+        /* #parent .child .grand-child h2 {
+            color: red;
+        } */
+        #parent {
+            background-color: lightblue;
+        }
+        #parent > h2 {
+            color: red;
+        }
+        .navigation > li > a {
+            color: red;
+            text-decoration: none;
+        }
+
+        #parent + h2 {
+            color: blue;
+        }
+
+        #parent ~ h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <div id="parent" class="section">
+        <h2 class="title">This is the child of parent div</h2>
+        <div class="child">
+            <h2 class="sub-title">This is the child of child div</h2>
+            <div class="grand-child">
+                <h2 class="sub-title sub-sub-title">This is the another child</h2>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>This is not a child of parent</h2>
+    <h2>This is not a child of parent</h2>
+    <h2>This is not a child of parent</h2>
+
+    <ul class="navigation">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Men</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#">Clothes</a>
+                </li>
+                <li>
+                    <a href="#">Watch</a>
+                </li>
+                <li>
+                    <a href="#">Jeans</a>
+                </li>
+                <li>
+                    <a href="#">Upper</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Women</a>
+        </li>
+        <li>
+            <a href="#">Shoes</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#">Puma</a>
+                </li>
+                <li>
+                    <a href="#">Adida</a>
+                </li>
+                <li>
+                    <a href="#">Liberty</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Books</a>
+        </li>
+    </ul>
+
+    
+</body>
+</html>
