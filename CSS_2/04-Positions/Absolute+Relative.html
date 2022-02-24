@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            border: 2px solid red;
+            padding: 50px;
+            /* position: relative; */
+        }
+        #nested-div {
+            border: 2px solid blue;
+            padding: 50px;
+            /* position: relative; */
+        }
+        .sub-nested-div {
+            border: 2px solid green;
+            margin: 10px;
+            padding: 50px;
+            /* position: relative; */
+        }
+        .sub-sub-nested-div {
+            border: 2px solid orange;
+            margin-bottom:  50px;
+            height: 250px;
+            position: relative;
+        }
+        img {
+            position: absolute;
+            /* left: 0px; */
+            right: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Positions</h1>
+
+    <div id="div">
+        <div id="nested-div">
+            <div class="sub-nested-div">
+                <div class="sub-sub-nested-div">
+                    <img src="../../images/00-22.gif" alt="">
+                </div>
+                <div class="sub-sub-nested-div">
+                    <img src="../../images/00-22.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
