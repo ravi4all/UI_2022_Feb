@@ -53,6 +53,7 @@ a {
     background-color: #333545;
     color: #fff;
     padding: 15px 0px;
+    margin-bottom: 30px;
 }
 #header a {
     color: #fff;
@@ -127,3 +128,23 @@ a {
 
 
 /* Specific CSS */
+#section_1 h2 {
+    margin-bottom: 20px;
+}
+#section_1 .left {
+    width: 18%;
+    margin-right: 20px;
+}
+#section_1 img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#section_1 a {
+    color: #000;
+}
+#section_1 h4 {
+    margin-bottom: 10px;
+}
+#section_1 a span {
+    color: rgb(102, 102, 102);
+}
