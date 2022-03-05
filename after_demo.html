@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            position: relative;
+        }
+        h1.text {
+            position: relative;
+            z-index: 11;
+        }
+        h1 .border:after {
+            content: "";
+            border: 1px solid red;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 50%;
+            z-index: -2;
+        }
+        h1::before {
+            content: "";
+            background-color: #fff;
+            width: 18%;
+            left: 41%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <span class="text">This is a heading</span>
+        <span class="border"></span>
+    </h1>
+    
+</body>
+</html>
