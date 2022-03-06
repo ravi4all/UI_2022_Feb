@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            background-color: lightcyan;
+        }
+        :empty {
+            border: 1px solid red;
+        }
+        
+        /* li is the only child of its parent */
+        li:only-child {
+            background-color: red;
+        }
+
+        li:first-of-type {
+            background-color: lightgray;
+        }
+
+        li:last-of-type {
+            background-color: lightgreen;
+        }
+
+        h2:first-child {
+            color: red;
+        }
+
+        /* h2:first-of-type {
+            color: red;
+        } */
+
+        li:nth-child(4) {
+            font-size: 20px;
+        }
+
+        li:nth-last-child(1) {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Structural Pseudo Classes</h1>
+
+    <div>
+        <h2>This is a heading</h2>
+        <h3>This is another heading</h3>
+        <h4>This is also a heading</h4>
+    </div>
+
+    <ul>
+        <li>
+            <a href="#">Item_1</a>
+        </li>
+        <li>
+            <a href="#">Item_2</a>
+        </li>
+        <li>
+            <a href="#">Item_3</a>
+        </li>
+        <li>
+            <a href="#">Item_4</a>
+        </li>
+        <li>
+            <a href="#">Item_5</a>
+        </li>
+    </ul>
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <ul>
+        <li></li>
+    </ul>
+    
+</body>
+</html>

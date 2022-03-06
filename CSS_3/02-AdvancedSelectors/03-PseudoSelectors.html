@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            /* color: red; */
+            text-decoration: none;
+        }
+        /* a:link {
+            color: red;
+        }
+        a:hover {
+            color: blue;
+        }
+        a:visited {
+            color: black;
+        }
+        a:focus {
+            color: green;
+        } */
+        /* a:link, a:hover, a:visited, a:focus {
+            color: red;
+        } */
+
+        /* a:is(:link, :hover, :visited, :focus) {
+            color: green;
+        } */
+        /* li {
+            font-size: 20px;
+        } */
+        
+        /* :is(li, a, span, p) {
+            font-size: 20px;
+        } */
+
+        /* div a, p a, li a {
+            text-decoration: none;
+        } */
+        
+        /* :is(li, p, div) a {
+            text-decoration: none;
+        } */
+
+
+        /* :is(p,a) {
+            color: red;
+        } */
+
+        /* :where(a, p) {
+            color: green;
+        } */
+
+        /* background color red for those a tag
+        where focus is not set */
+        /* a:where(:not(:focus)) {
+            background-color: red;
+        } */
+
+        /* a:where(:focus) {
+            background-color: red;
+        } */
+
+        ul li:not(:last-child) {
+            border-bottom: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo Selectors</h1>
+
+    <ul>
+        <li>
+            <a href="#">Menu Item_1</a>
+        </li>
+        <li>
+            <a href="#">Menu Item_2</a>
+        </li>
+        <li>
+            <a href="#">Menu Item_3</a>
+        </li>
+        <li>
+            <a href="#">Menu Item_4</a>
+        </li>
+        <li>
+            <a href="#">Menu Item_5</a>
+        </li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sequi placeat quidem aliquid iste adipisci magnam, quas obcaecati cum maiores ipsum natus quaerat sed enim provident! Ab nesciunt officiis quisquam?
+    </p>
+    
+</body>
+</html>
