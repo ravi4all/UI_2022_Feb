@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: none;
+        }
+        #home {
+            display: block;
+        }
+        #men:target ~ #home,
+        #women:target ~ #home,
+        #watch:target ~ #home,
+        #shoes:target ~ #home {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#">Home</a>
+    <a href="#men">Men</a>
+    <a href="#women">Women</a>
+    <a href="#shoes">Shoes</a>
+    <a href="#watch">Watch</a>
+
+    
+
+    <div id="men"></div>
+
+    <div id="women"></div>
+
+    <div id="shoes"></div>
+
+    <div id="watch"></div>
+
+    <div id="home"></div>
+    
+</body>
+</html>
