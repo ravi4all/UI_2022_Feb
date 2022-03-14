@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* base size = 16px by default */
+        html {
+            font-size: 16px;
+        }
+        /* .child {
+            font-size: 10px;
+        } */
+        #parent {
+            font-size: 10px;
+            border: 1px solid red;
+            /* width: 50%; */
+            width: 50vw;
+        }
+        h2 {
+            /* 1em = base size */
+            font-size: 2em;
+        }
+        #parent > h2 {
+            font-size: 2rem;
+        }
+        #parent_2 {
+            height: 200px;
+            /* width: 50%; */
+            width: 50vmax;
+            height: 50vmin;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Units in CSS</h1>
+
+    <!-- 
+    2 Types of units
+    Absolute Units - px, cm, mm, in, pc, pt
+    px - smallest unit
+    cm = 1cm = 37.8px
+    mm = 1/10th of 1cm
+    in = 1inch = 96px
+    pc = 1pc = 1/6th of 1inch
+    pt = 1pt = 1/72 of 1 inch
+
+    Relative Units - rem, em, %, vw, vh, vmin, vmax, ex
+    rem - dependes on root element font-size
+    em - relative to font-size of the element itself
+    % - relative to parent size
+    vw - viewport width, the element's width is 1% of viewport's width
+    vh - viewport height, the element's height is 1% of viewport's height
+    vmin - relative to 1% of viewport's smaller dimension
+    vmax - relative to 1% of viewport's larger dimension
+-->
+
+    <div id="parent">
+        <h2>This is a heading inside parent div</h2>
+        <h2>This is a heading inside parent div</h2>
+
+        <div class="child">
+            <h2>This is a heading inside child div</h2>
+            <h2>This is a heading inside child div</h2>
+        </div>
+    </div>
+
+    <div id="parent_2"></div>
+    
+</body>
+</html>
