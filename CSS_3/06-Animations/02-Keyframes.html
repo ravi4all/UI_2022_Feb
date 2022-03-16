@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* animation-name: anim_1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear; */
+            animation: anim_1 5s infinite linear;
+        }
+        @keyframes anim_1 {
+            0% {
+                transform: translate(0px,0px);
+                background-color: red;
+            }
+            25% {
+                transform: translate(1000px,0px);
+                background-color: blue;
+            }
+            50% {
+                transform: translate(1000px,500px);
+                background-color: orange;
+            }
+            75% {
+                transform: translate(0px,500px);
+                background-color: green;
+            }
+            100% {
+                transform: translate(0px,0px);
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>

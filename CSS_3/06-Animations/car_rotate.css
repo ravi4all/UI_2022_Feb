@@ -1,0 +1,53 @@
+#parent {
+    height: 600px;
+    width: 600px;
+    border: 20px double red;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+h2 {
+    font-size: 80px;
+    text-align: center;
+    animation: loading_text 2s infinite linear;
+}
+
+.child {
+    height: 550px;
+    width: 550px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* border: 20px solid red; */
+    background-image: url("car.png");
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    animation: car 5s infinite linear;
+}
+
+@keyframes  loading_text{
+    0% {
+        transform: scale(0.5,0.5);
+    }
+    50% {
+        transform: scale(1.5,1.5);
+    }
+    100% {
+        transform: scale(0.5,0.5);
+    }
+}
+
+@keyframes car {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
