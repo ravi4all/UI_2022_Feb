@@ -1,0 +1,28 @@
+.row {
+    display: grid;
+    /* grid-template-columns: 25% 50% 25%; */
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.col {
+    border: 1px solid red;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.col-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.col-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.col-8 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
