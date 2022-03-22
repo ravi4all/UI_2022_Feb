@@ -1,0 +1,38 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.row {
+    display: grid;
+    /* align-items: center; */
+    justify-content: space-between;
+    grid-template-columns: 15% 65% 15%;
+    grid-template-areas: "logo nav login"
+                         "logo search login";
+}
+
+.logo {
+    grid-area: logo;
+    border: 1px solid red;
+}
+
+.nav {
+    grid-area: nav;
+    border: 1px solid blue;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login {
+    border: 1px solid green;
+    grid-area: login;
+}
+
+.search {
+    grid-area: search;
+    border: 1px solid orange;
+}
